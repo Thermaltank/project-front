@@ -79,9 +79,6 @@ export function Login() {
                   {loading ? "Ingresando..." : "Iniciar Sesión"}
                 </button>
               </form>
-
-              {/* Si quieres, aquí puedes agregar un botón/links para registro */}
-              {/* <button className="btn btn-link w-100 mt-2" onClick={() => navigate("/registro")}>Crear cuenta</button> */}
             </div>
           </div>
         </div>

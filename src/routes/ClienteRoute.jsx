@@ -19,6 +19,5 @@ export const ClienteRoute = () => {
   );
 };
 
-// Ejemplos de tus componentes a renderizar
 
 

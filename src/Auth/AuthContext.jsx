@@ -5,7 +5,6 @@ const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
 
 export function AuthProvider({ children }) {
-  // lee token de sessionStorage (no de localStorage)
   const [token, setToken] = useState(() => sessionStorage.getItem("token"));
   const [user, setUser] = useState(null);
 
@@ -15,8 +14,7 @@ export function AuthProvider({ children }) {
 
   const login = async (username, password) => {
     const { data } = await api.post("/api/auth/login", { username, password });
-    sessionStorage.setItem("token", data.token);   // <-- guarda en sessionStorage
-    setToken(data.token);
+    sessionStorage.setItem("token", data.token);   
   };
 
   const register = async (username, password) => {

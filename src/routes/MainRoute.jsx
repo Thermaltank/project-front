@@ -8,7 +8,7 @@ import { Inicio } from '../Admin/Inicio'
 import { ClienteRoute } from './ClienteRoute'
 import RequireAuth from '../Auth/RequireAuth'
 
-const MainRoute = () => {
+export const MainRoute = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
@@ -23,5 +23,3 @@ const MainRoute = () => {
     </Routes>
   )
 }
-
-export default MainRoute

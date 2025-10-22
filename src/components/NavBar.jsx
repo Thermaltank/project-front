@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export function NavBar() {
   return (
     <>
-      {/* Navbar */}
       <nav className="navbar navbar-expand-lg pt-2 navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/inicio">Seged</Link>
