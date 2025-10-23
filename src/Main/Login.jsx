@@ -15,8 +15,14 @@ export function Login() {
     setError(null);
     setLoading(true);
     try {
-      await login(username, password);       
-      navigate("/inicio", { replace: true }); 
+      const token = await login(username, password);
+      if (token) {
+        setTimeout(() => {
+          navigate("/inicio", { replace: true });
+        }, 100); // pequeño delay para asegurar que el estado se actualice
+      } else {
+        setError("Error de autenticación");
+      }
     } catch (e) {
       const msg = e?.response?.data?.message || "Usuario o contraseña inválidos";
       setError(msg);
