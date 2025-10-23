@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "../components/NavBar";
-import { Clientes } from "../Admin/Clientes";
+import { Categoria } from "../Admin/Categoria";
 
-export const ClienteRoute = () => {
+export const CategoriaRoute = () => {
   return (
     <div
       className="d-flex flex-column"
@@ -12,11 +12,8 @@ export const ClienteRoute = () => {
             <NavBar/>
       </div>
       <div style={{ height: "83%", overflow: "auto" }}>
-        <Clientes/>
+        <Categoria/>
       </div>
     </div>
   );
 };
-
-
-

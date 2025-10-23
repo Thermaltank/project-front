@@ -24,8 +24,12 @@ export function NavBar() {
                className="nav-item">
                 <Link to="/clientes" className="nav-link">Clientes</Link>
               </li>
+              {/* <li 
+               className="nav-item">
+                <Link to="/categorias" className="nav-link">Categorías</Link>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="#">Proveedores</a>
+                <Link to="/proveedores" className="nav-link">Proveedores</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Ventas</a>
