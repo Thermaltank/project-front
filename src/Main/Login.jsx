@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../auth/AuthContext";
+import { useAuth } from "../Auth/AuthContext";
 
 export function Login() {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ export function Login() {
       if (token) {
         setTimeout(() => {
           navigate("/inicio", { replace: true });
-        }, 100); // pequeño delay para asegurar que el estado se actualice
+        }, 100);
       } else {
         setError("Error de autenticación");
       }

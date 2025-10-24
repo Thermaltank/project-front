@@ -24,10 +24,10 @@ export function NavBar() {
                className="nav-item">
                 <Link to="/clientes" className="nav-link">Clientes</Link>
               </li>
-              {/* <li 
+              <li 
                className="nav-item">
                 <Link to="/categorias" className="nav-link">Categorías</Link>
-              </li> */}
+              </li>
               <li className="nav-item">
                 <Link to="/proveedores" className="nav-link">Proveedores</Link>
               </li>
